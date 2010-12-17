@@ -1,23 +1,8 @@
-"""
-Import delicious bookmarks into Google Bookmarks
-(Script is adapted from http://blog.persistent.info/2006/10/import-your-delicious-bookmarks-into.html)
-
-First:
-  wget 'https://USERNAME:PASSWORD@api.del.icio.us/v1/posts/all' > delicious_bookmarks.xml
-Then copy http://persistent.info/delicious2google/main.js to a web-accessible
-    directory, putting the URL in the 'url' variable below
-Then:
-  python delicious2gb.py delicious_bookmarks.xml > gb_import.html
-Then copy gb_import.html to a web-accessible directory
-Finally hit gb_import.html over the web
-Boom
-"""
-
 import sys
 import json
 from lxml import etree
 
-# SET THIS VARIABLE PER DOCSTRING ABOVE
+# SET THIS VARIABLE PER README
 url = ""
 
 posts = []
