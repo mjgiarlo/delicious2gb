@@ -7,7 +7,7 @@ First:
 Then copy http://persistent.info/delicious2google/main.js to a web-accessible
     directory, putting the URL in the 'url' variable below
 Then:
-  python gb_import.py delicious_bookmarks.xml > gb_import.html
+  python delicious2gb.py delicious_bookmarks.xml > gb_import.html
 Then copy gb_import.html to a web-accessible directory
 Finally hit gb_import.html over the web
 Boom
